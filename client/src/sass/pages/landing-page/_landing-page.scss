@@ -1,0 +1,62 @@
+.landing-page {
+  min-height: 100vh;
+  background-image: url(../../../assets/images/bg_image.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__header {
+    @include flex(center, space-between);
+    background-color: rgba($color: $color-white, $alpha: 0.3);
+    border-bottom: 3px solid $color-dark;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__user-nav {
+    &__list {
+      list-style: none;
+      display: flex;
+      margin-right: 3rem;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+
+    &__link:link,
+    &__link:active,
+    &__link:visited {
+      @include flex(center, space-between);
+      flex-direction: column;
+      font-size: 2rem;
+      text-decoration: none;
+      color: $color-dark;
+      transition: color 0.2s ease;
+
+      &:hover,
+      &:active,
+      &.active {
+        color: $color-primary;
+      }
+
+      & .icon {
+        font-size: 3.5rem;
+        color: currentColor;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 60vw;
+    padding: 10rem;
+
+    & h1 {
+      font-size: 4rem;
+    }
+  }
+}

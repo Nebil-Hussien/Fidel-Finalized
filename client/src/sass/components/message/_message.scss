@@ -1,0 +1,26 @@
+.message {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  max-width: 40rem;
+  min-width: 30rem;
+  margin-bottom: 1rem;
+  &-danger {
+    color: $color-danger-text;
+    background: $color-danger-background;
+    border: 1px solid $color-danger-background;
+  }
+
+  &-success {
+    color: $color-success-text;
+    background: $color-success-background;
+    border: 1px solid $color-success-background;
+  }
+
+  &-info {
+    color: $color-info-text;
+    background: $color-info-background;
+    border: 1px solid $color-info-background;
+  }
+}

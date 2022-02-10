@@ -1,0 +1,13 @@
+.users-page {
+  &__students {
+    width: 50%;
+    max-height: 50rem;
+    overflow: auto;
+  }
+
+  &__tutors {
+    width: 50%;
+    max-height: 50rem;
+    overflow: auto;
+  }
+}

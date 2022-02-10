@@ -1,0 +1,45 @@
+.drop-down {
+  background: $color-white;
+  box-shadow: $box-shadow;
+  width: 23.7rem;
+  height: fit-content;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 30;
+  transition: all 0.3s 0.3s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    border: 1.5rem solid transparent;
+    border-bottom-color: $color-white;
+    transform: translateY(-3rem);
+  }
+
+  font-size: $default-font-size !important;
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    padding: 1rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid #bdbdbd;
+    }
+    color: $color-dark;
+  }
+
+  &.open {
+    transform: translateY(1rem);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.close {
+    transform: translateY(3rem);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

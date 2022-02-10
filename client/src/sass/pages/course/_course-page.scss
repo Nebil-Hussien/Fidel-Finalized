@@ -1,0 +1,26 @@
+.course-page {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+
+.course__materials,
+.course__assignments,
+.course__tests {
+  &__title {
+    @include flex(center, flex-start);
+    & h1 {
+      margin-right: 3rem;
+    }
+
+    &-icon {
+      font-size: 3rem !important;
+      cursor: pointer;
+      color: $color-dark;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $color-primary;
+      }
+    }
+  }
+}

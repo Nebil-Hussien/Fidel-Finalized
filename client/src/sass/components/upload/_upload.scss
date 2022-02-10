@@ -1,0 +1,49 @@
+.upload {
+  margin-top: 2rem;
+  &__filecontainer {
+    @include flex(center, space-between);
+
+    &-choose {
+      @include flex(center, center);
+      width: 30rem;
+      height: 20rem;
+      padding: 1rem;
+      border: 3px dashed #ddd;
+      font-size: $default-font-size;
+      cursor: pointer;
+    }
+
+    &-file {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #ddd;
+        border-radius: 3px;
+      }
+
+      &--close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem !important;
+        color: $color-dark;
+        background-color: $color-white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__button {
+    width: 50%;
+    margin: 0 auto;
+
+    & button {
+      margin-bottom: 0;
+    }
+  }
+}

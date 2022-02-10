@@ -1,0 +1,115 @@
+{
+    "registration_1": "Register",
+    "login_1":"Login",
+    "heading_Primary": "Education is the most powerful weapon which you can use to change the world",
+    "heading_secondary": "Fidel Tutoring Center, is an Tutorial Center based in Addis Ababa, Ethiopia. It provides Excellent Tutoring for Students to help them succeed. The company was launched in 2005, and is recognized under the MoE.",
+    "join_now": "Join Now!",
+    
+    "add_test": "Add Test",
+    "test_type": "Test Type",
+    "test_duration":"Test Duration (In Minutes)",
+    "test_date": "Test Date",
+    "test_number": "Test Number",
+    "total_mark": "Total Mark",
+    "questions1_h2": "Questions",
+    "question2_form_lable": "Questions",
+    "choice1_form_lable": "Choice",
+    "choice2_button": "Choice",
+    "select_the_correct_choice": "Select the correct choice",
+    "add_question": "Add Question",
+    "save_test": "save",
+    "discard_test": "Discard",
+
+    "login_heading_primary": "Login",
+    "phone_number_form_lable": "Phone Number",
+    "password_form_lable": "Password",
+    "userType_lable_student" : "Studenet",
+    "userType_lable_teacher":"Teacher",
+    "login_button": "Login",
+    "create_account_link":"Create Account",
+
+    "register_heading_primary": "Register",
+    "form_label_first_name": "First Name",
+    "form_label_last_name": "Last Name",
+    "form_label_user_name": "User Name",
+    "form_label_DOB": "Date of Birt",
+    "form_label_subcity": "Sub City",
+    "form_label_werda": "Wereda",
+    "form_label_house_number": "House Number",
+    "form_label_phone_number": "Phone Number",
+    "form_label_email": "Email",
+    "form_label_gender": "Gender",
+    "radio_label_gender_male": "Male",
+    "radio_label_gender_female": "FeMale",
+    "form_label_password": "Password",
+    "form_label_Re_enter_password": "Re-enter Password",
+    "form_check_labl": "I have read and accepted Terms and Conditions",
+
+    //coursePage
+    "heading_secondory_add_coursePage": "Add",
+    "form_lable_title_coursePage": "Title",
+    "heading-secondary_Create_ClassRoom_coursePage": "Create ClassRoom",
+    "Form_Label_roomName_coursePage": "Class Name",
+    "Form_Label_duration_coursePage": "Duration",
+    "paragraph_link_Rate_Tutor_coursePage": "Rate Tutor",
+    "button_submit_rating_coursePage": "Submit",
+    "link_student_list_coursePage": "View Student List",
+    "button_attend_lecture_coursePage": "Attend Lecture",
+    "heading_secondary_course_materials_coursePage": "Course Materials",
+    "message_No_Material_Found_coursePage" : "No Material Found!",
+    "course_assignments_Assignments_coursePage": "Assignments",
+    "message_No_Assignement_Found_coursePage": "No Assignement Found!",
+    "course__tests_Test_coursePage": "Test",
+    "message_No_Test_Found_coursePage": "No Test Found!",
+
+    //enrollCoursePage
+    "heading_secondary_Upload_Bank_Receipt_enrollCoursePage": "Upload Bank Receipt",
+    "enroll_course_page_Course_Name_enrollCoursePage": "Course Name",
+    "enroll_course_page_provided_by_enrollCoursePage": " Provided by",
+    "enroll_course_page_enroll_course_page_Course_Tuition_fee_enrollCoursePage":"Course Tuition fee",
+    "enroll_course_page_fee_ETB_per_hour_enrollCoursePage":"ETB per hour",
+    "enroll_course_page_fee_Course_Duration_enrollCoursePage":"Course Duration",
+    "enroll_course_page_fee_days_enrollCoursePage": "days",
+    "enroll_course_page_fee_Course_delivery_language_enrollCoursePage":"Course delivery language",
+    "enroll_course_page_fee_No_of_students_enrolled_enrollCoursePage":"No. of students enrolled",
+    "enroll_course_page_fee_check_Enroll_enrollCoursePage": "Enroll",
+    "enroll_course_page_fee_cancel_Cancel_enrollCoursePage": "Cancel",
+    "enroll_course_page_fee_Send_Receipt_enrollCoursePage": "Send Receipt",
+    "enroll_course_page_fee_Send_Later_enrollCoursePage": "Send Later",
+    //homePage
+    "heading_primary_main_My_Courses_homepage":"My Courses",
+    "Message_No_data_found_homepage": "No data found",
+    "heading_primary_main_New_Courses_homepage" :"New Courses",
+    "heading-primary_main_My_Schedule_homepage": "My Schedule",
+    "button_View_Schedule_homepage": "View Schedule",
+    //profilePage
+    "Rating_profilePage":"Rating:",
+    "profile__detail_item__label_Email_profilePage":"Email:",
+    "profile__detail_item__label_Phone_profilePage":"Phone:",
+    "profile__detail_item__label_subCity_profilePage":"Sub City:",
+    "profile__detail_item__label_Wereda_profilePage":"Wereda:",
+    "profile__detail_item__label_Gender_profilePage":"Gender:",
+    "profile__detail_item__label_UserName_profilePage":"User Name:",
+    "button_cancel":"Cancel",
+    //schedulePage
+    "heading-primary_main_Next_Class":"Next Class",
+    //studentListPage
+    "heading_secondary_Student_List_studentListPage": "Student List",
+    //studentPage
+    "button_StudentPage":"Submit",
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

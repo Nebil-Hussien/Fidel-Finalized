@@ -1,0 +1,16 @@
+.auth-header {
+  background-color: $color-primary;
+  height: $header-height;
+  box-shadow: $box-shadow;
+  @include flex(center, flex-start);
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  margin-bottom: 4rem;
+
+  & h1 {
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}

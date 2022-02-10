@@ -1,0 +1,28 @@
+import { isTutor } from "../utils/token";
+
+export const requests = {
+  register: "/auth/sign-up",
+  login: "/auth/sign-in",
+  teacherLogin: "/tutor/sign-in",
+  getProfile: isTutor ? "/tutor/profile" : "/user/profile",
+  updateProfile: isTutor ? "/tutor/update" : "/user/update",
+  getMyCourses: isTutor ? "/tutor/assigned-course" : "/course/student",
+  getAllCourses: "/course/all-assigned-course",
+  getTotalEnrolledStudents: "/course/total-enrolled",
+  searchCourses: "/course/search-all",
+  searchAssignedCourses: "/course/search-assigned",
+  enrollCourse: "/course/enroll",
+  submitEnrollement: "/course/student/submit-payment-verification",
+  createTest: "/tutor/create-assessment",
+  createAssignment: "/black-board/create",
+  createMaterial: "/black-board/create",
+  getCourseMaterials: "/course/material",
+  getAllCourseTests: "/tutor/course/assessment",
+  getUntakenCourseTests: "/user/assessment-untaken",
+  getTakenCourseTests: "/user/assessment-taken",
+  downloadCourseMaterial: "/course/material/download",
+  createClassRoom: "/class-room/create",
+  submitTest: "/user/take-assessment",
+  rateTutor: "/user/rate",
+  getRate: "/tutor/rate",
+};

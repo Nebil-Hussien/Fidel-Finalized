@@ -1,0 +1,15 @@
+.question {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  & > p {
+    padding-bottom: 1rem;
+  }
+
+  &__choices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,82 @@
+.profile {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  @include flex(stretch, flex-start);
+  flex-direction: column;
+
+  &__user {
+    border-bottom: 3px solid $color-primary;
+    text-align: center;
+    padding-bottom: 1rem;
+
+    &-image-container {
+      width: 30rem;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+    &-image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    &-image-edit {
+      transition: transform 0.4s;
+      width: 100%;
+      height: 55px;
+      background: #000000;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.6;
+      z-index: 10;
+      transform: translateY(100%);
+    }
+
+    &-image-edit-camera {
+      color: #ffffff;
+      font-size: 4rem !important;
+    }
+
+    &-image-container:hover > &-image-edit {
+      transform: translateY(0);
+    }
+  }
+
+  &__detail {
+    font-size: $default-font-size;
+    list-style: none;
+    padding: 2rem;
+
+    &-item {
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+      }
+
+      &__label {
+        margin-right: 2rem;
+        font-weight: 600;
+      }
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  & button {
+    align-self: flex-end;
+    margin-top: 0;
+  }
+
+  &__button {
+    @include flex(center, flex-end);
+  }
+}

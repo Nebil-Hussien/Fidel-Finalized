@@ -1,0 +1,24 @@
+.add-test-page {
+  margin-bottom: 3rem;
+  &__options {
+    margin: 2rem 0;
+  }
+
+  &__questions-box {
+    width: 70%;
+    max-width: 80rem;
+    border: 2px solid $color-dark;
+    background-color: $color-primary;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+  }
+
+  &__buttons {
+    width: 70%;
+    max-width: 80rem;
+    @include flex(center, flex-start);
+    & > div {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.rating {
+  // margin: 2rem 0;
+  & .MuiRating-root {
+    font-size: 5rem !important;
+    color: $color-primary;
+  }
+}

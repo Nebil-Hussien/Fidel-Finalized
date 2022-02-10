@@ -1,0 +1,18 @@
+.notification {
+  flex-direction: column;
+  @include flex(flex-start, space-between);
+  & > div {
+    @include flex(flex-start, space-between);
+  }
+  &__content {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  color: $color-dark;
+
+  & button {
+    align-self: flex-end;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0;
+  }
+}

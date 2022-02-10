@@ -1,0 +1,12 @@
+.home-page {
+  &__options {
+    width: 95%;
+    max-width: 50rem;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+}

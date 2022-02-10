@@ -1,0 +1,208 @@
+.form {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+
+  &__group {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    transition: all 0.2s;
+    outline: none;
+    border: 1px solid $color-dark;
+    padding: 1rem;
+    font-size: $default-font-size;
+    font-family: inherit;
+    border-radius: 3px;
+
+    &:focus {
+      box-shadow: $box-shadow;
+      border: 1px solid $color-primary;
+    }
+  }
+  &__textarea {
+    display: block;
+    width: 100%;
+    transition: all 0.2s;
+    outline: none;
+    border: 1px solid $color-dark;
+    padding: 1rem;
+    font-size: $default-font-size;
+    border-radius: 3px;
+    height: 10rem;
+    font-family: "Lato", sans-serif;
+
+    &:focus {
+      box-shadow: $box-shadow;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &__file {
+    display: block;
+    visibility: none;
+    appearance: none;
+    width: 100%;
+    transition: all 0.2s;
+    outline: none;
+    border: 1px solid $color-dark;
+    padding: 1rem;
+    font-size: $default-font-size;
+    border-radius: 3px;
+
+    &:focus {
+      box-shadow: $box-shadow;
+      border: 1px solid $color-primary;
+    }
+
+    // &-input {display: none;}
+  }
+
+  &__select {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    font-family: inherit;
+    transition: all 0.2s;
+    outline: none;
+    border: 1px solid $color-dark;
+    padding: 1rem;
+    font-size: $default-font-size;
+    border-radius: 3px;
+
+    &:focus {
+      box-shadow: $box-shadow;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
+
+  ////////////////
+
+  /* Customize the label (the form__checkbox-group) */
+  .form__checkbox-group {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .form__checkbox-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .form__checkbox-group:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .form__checkbox-group input:checked ~ .checkmark {
+    background-color: $color-primary;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .form__checkbox-group input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .form__checkbox-group .checkmark:after {
+    left: 0.9rem;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 1rem;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

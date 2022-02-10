@@ -1,0 +1,29 @@
+.input {
+  width: 100%;
+  max-width: 50rem;
+  padding: 1rem;
+  border: none;
+  border: 2px solid $color-dark;
+  border-radius: 3px;
+  transition: border 0.2s ease;
+  font-size: $default-font-size;
+  font-family: inherit;
+  display: block;
+  margin-bottom: 2rem;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-primary;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-dark;
+    opacity: 0.5;
+  }
+}
+
+.label {
+  display: inline-block;
+  font-size: $default-font-size;
+  margin-bottom: 1rem;
+}

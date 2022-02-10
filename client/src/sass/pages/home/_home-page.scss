@@ -1,0 +1,6 @@
+.home-page {
+  &__my-courses,
+  &__new-courses {
+    border-bottom: 3px solid $color-primary;
+  }
+}

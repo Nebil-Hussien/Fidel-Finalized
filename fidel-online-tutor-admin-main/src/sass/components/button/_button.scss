@@ -1,0 +1,56 @@
+.btn {
+  @include flex(center, flex-start);
+  padding: 1.5rem 3rem;
+  font-size: $default-font-size;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid $color-dark;
+  border-radius: 10px;
+  margin: 2rem 0;
+  background-color: $color-primary;
+  transition: transform 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  color: $color-dark;
+
+  & a {
+    text-decoration: none;
+    color: $color-dark;
+  }
+  &.outlined {
+    background-color: transparent;
+    background-color: $color-white;
+  }
+
+  &.success {
+    background-color: $color-green;
+    color: $color-white;
+  }
+
+  &.danger {
+    background-color: $color-red;
+    color: $color-white;
+  }
+
+  &__icon {
+    font-size: 3rem !important;
+    margin-right: 1rem;
+
+    &.small {
+      font-size: 2rem !important;
+    }
+  }
+
+  &:not(:disabled):hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+  }
+}
